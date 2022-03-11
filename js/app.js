@@ -3,6 +3,7 @@ let posts=[ ];
 const likedPostsId = [];
 const reportedPostsId = [];
 
+const qaSection = document.getElementById('qa-section');
 const getLikedPosts = () => {
      let likesPostsSorted = posts.filter((post) => likedPostsId.includes(post.id));
      console.log(likesPostsSorted);
@@ -40,16 +41,25 @@ const switchTab = (id) => {
         document.getElementById( "posts" ).style.display = "grid";
         document.getElementById( "liked" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
+        qaSection.classList.remove('d-none');
     } else if (id === "liked") {
         document.getElementById( "liked" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
+        qaSection.classList.add('d-none');
 
         displayLikedPosts();
+    } else if (id === "question-answer") {
+        document.getElementById( "liked" ).style.display = "none";
+        document.getElementById( "posts" ).style.display = "none";
+        document.getElementById( "reported" ).style.display = "none";
+        qaSection.classList.remove('d-none');
+
     } else {
         document.getElementById( "reported" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "liked" ).style.display = "none";
+        qaSection.classList.add('d-none');
 
         displayReportedPosts();
     }
