@@ -97,19 +97,19 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>javascript is a client-side scripted language. javascript code runs in the browser with the help of the browser engine. The code is parsed and eventually converted to machine code by the browser engine to run on the CPU. Again, this is a single-threaded language that can do a single task at a time. All the tasks are listed in the <span class="text-primary">call stack</span> and the synchronous tasks start executing while the asynchronous tasks are first queued in webapis and then transfered to the <span class="text-info">callback queue</span>. When the <span class="text-primary">call stack</span> is empty, the <span class="text-success">event loop</span> triggers and transfers tasks from the <span class="text-info">callback queue</span> one after another to the <span class="text-primary">call stack</span> to eventually execute. Thus javascript works.
+                      <strong>javascript is a client-side scripted language. javascript code runs in the browser with the help of the browser engine. The code is parsed and eventually converted to machine code by the browser engine to run on the CPU. Again, this is a single-threaded, interpreted or just in time compiled language that can do a single task at a time. All the tasks are listed in the <span class="text-primary">call stack</span> and the synchronous tasks start executing while the asynchronous tasks are first queued in webapis and then transfered to the <span class="text-info">callback queue</span>. When the <span class="text-primary">call stack</span> is empty, the <span class="text-success">event loop</span> triggers and transfers tasks from the <span class="text-info">callback queue</span> one after another to the <span class="text-primary">call stack</span> to eventually execute. Thus javascript works.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        What does javascript <span class="text-success">event loop</span> do?
+                        What does javascript event loop do?
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>We know, javascript can do one task at a time, as a result, the asynchronous tasks are first queued in the webapis and then transferred to the <span class="text-info">callback queue</span>. The <span class="text-success">event loop</span> handles this <span class="text-info">callback queue</span>. It has a single task to do and that is, when the <span class="text-primary">call stack</span> is empty, it pushes tasks from the <span class="text-info">callback queue</span> to the <span class="text-primary">call stack</span> in order to execute. It has to wait until the <span class="text-primary">call stack</span> is empty. After the <span class="text-success">event loop</span> triggers, it also lets the render queue render which indicates that the <span class="text-success">event loop</span> is directly related to a web page's fluidity & smooth responsiveness. 
+                      <strong>We know, javascript can do one task at a time, as a result, the asynchronous tasks are first queued in the webapis and then transferred to the <span class="text-info">callback queue</span>. The <span class="text-success">event loop</span> handles this <span class="text-info">callback queue</span>. It has a single task to do and that is, when the <span class="text-primary">call stack</span> is empty, it pushes tasks from the <span class="text-info">callback queue</span> to the <span class="text-primary">call stack</span> in order to execute. It has to wait until the <span class="text-primary">call stack</span> is empty. After the <span class="text-success">event loop</span> triggers, it also lets the render queue to render which indicates that, the <span class="text-success">event loop</span> is directly related to a web page's fluidity & smooth responsiveness. 
                     </div>
                   </div>
                 </div>
@@ -135,24 +135,24 @@
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <td>1. Data remain after closing the browser tab</td>
+                                        <td>1. Data remain after closing the browser tab.</td>
                                         <td>1. Data don't remain after closing the browser tab.</td>
                                       </tr>
                                       <tr>
-                                        <td>2. Data get lost after manual deletation.</td>
-                                        <td>2. Data get lost without manual deletation.</td>
+                                        <td>2. Data get lost after manual deletion.</td>
+                                        <td>2. Data get lost without manual deletion.</td>
                                       </tr>
                                       <tr>
                                         <td>3. Data can be accessed from any other browser tab.</td>
-                                        <td>3. Data can only be accessed from a particular broswer tab.</td>
+                                        <td>3. Data can only be accessed from a particular browser tab.</td>
                                       </tr>
                                       <tr>
                                         <td>4. Data survive even after browser closing or system restart.</td>
                                         <td>4. Data don't survive after browser closing or system restart.</td>
                                       </tr>
                                       <tr>
-                                        <td>5. This is used for later accessable necissity.</td>
-                                        <td>5. This is used for temporary necissity.</td>
+                                        <td>5. This is used for later accessible necissity.</td>
+                                        <td>5. This is used for temporary necessity.</td>
                                       </tr>
                                     </tbody>
                                   </table>
