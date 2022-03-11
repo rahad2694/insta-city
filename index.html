@@ -91,7 +91,7 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>javascript is a client side scripted language. javascript code runs in the browser with the help of browser engine. The code is parsed and eventually converted to machine code by the browser engine to run on the CPU. Again, this is a single-threaded language which can do a single task at a time. All the tasks are listed in the call stack and the synchronous tasks start executing while the asynchronous tasks are first queued in webapis and then transfered to the callback queue. When the call stack is empty, the event loop triggers and transfers tasks from the callback queue one after another to the call stack to eventually execute.
+                      <strong>javascript is a client-side scripted language. javascript code runs in the browser with the help of the browser engine. The code is parsed and eventually converted to machine code by the browser engine to run on the CPU. Again, this is a single-threaded language that can do a single task at a time. All the tasks are listed in the call stack and the synchronous tasks start executing while the asynchronous tasks are first queued in webapis and then transfered to the callback queue. When the call stack is empty, the event loop triggers and transfers tasks from the callback queue one after another to the call stack to eventually execute. Thus javascript works.
                     </div>
                   </div>
                 </div>
@@ -103,7 +103,7 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>As we know, javascript can do one task at a time, as a result the asynchronous tasks are first queued in the webapis and then transfered to the callback queue. The event loop handles this callback queue. It has a single task to do and that is, when the call stack is empty, it pushes tasks from the callback queue to the call stack to execute. It is has to wait untill the call stack is empty. Afte the event loop triggers, it also lets the render queue to re
+                      <strong>We know, javascript can do one task at a time, as a result, the asynchronous tasks are first queued in the webapis and then transferred to the callback queue. The event loop handles this callback queue. It has a single task to do and that is, when the call stack is empty, it pushes tasks from the callback queue to the call stack in order to execute. It has to wait until the call stack is empty. After the event loop triggers, it also lets the render queue render which indicates that the event loop is directly related to a web page's fluidity & smooth responsiveness. 
                     </div>
                   </div>
                 </div>
@@ -116,8 +116,8 @@
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div>
-                            <h6 class="text-center pt-3">
-                                Local storage vs Session storage:
+                            <h6 class="text-center pt-3 fw-bold">
+                                Local storage  VS  Session storage:
                             </h6>
                             <div class="d-flex justify-content-center">
                                 <table class="mb-3 table table-hover text-center w-75 ">
@@ -139,6 +139,14 @@
                                       <tr>
                                         <td>3. Data can be accessed from any other browser tab.</td>
                                         <td>3. Data can only be accessed from a particular broswer tab.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>4. Data survive even after browser closing or system restart.</td>
+                                        <td>4. Data don't survive after browser closing or system restart.</td>
+                                      </tr>
+                                      <tr>
+                                        <td>5. This is used for later accessable necissity.</td>
+                                        <td>5. This is used for temporary necissity.</td>
                                       </tr>
                                     </tbody>
                                   </table>
