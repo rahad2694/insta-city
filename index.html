@@ -109,7 +109,7 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>We know, javascript can do one task at a time, as a result, the asynchronous tasks are first queued in the webapis and then transferred to the <span class="text-info">callback queue</span>. The <span class="text-success">event loop</span> handles this <span class="text-info">callback queue</span>. It has a single task to do and that is, when the <span class="text-primary">call stack</span> is empty, it pushes tasks from the <span class="text-info">callback queue</span> to the <span class="text-primary">call stack</span> in order to execute. It has to wait until the <span class="text-primary">call stack</span> is empty. After the <span class="text-success">event loop</span> triggers, it also lets the render queue to render which indicates that, the <span class="text-success">event loop</span> is directly related to a web page's fluidity & smooth responsiveness. 
+                      <strong>We know, javascript can do one task at a time, as a result, the asynchronous tasks are first queued in the webapis and then transferred to the <span class="text-info">callback queue</span>. The <span class="text-success">event loop</span> handles this <span class="text-info">callback queue</span>. It has a single operation to do and that is, when the <span class="text-primary">call stack</span> is empty, it pushes tasks from the <span class="text-info">callback queue</span> to the <span class="text-primary">call stack</span> in order to execute. It has to wait until the <span class="text-primary">call stack</span> is empty. After the <span class="text-success">event loop</span> triggers, it also lets the render queue to render which indicates that, the <span class="text-success">event loop</span> is directly related to a web page's fluidity & smooth responsiveness. 
                     </div>
                   </div>
                 </div>
@@ -139,7 +139,7 @@
                                         <td>1. Data don't remain after closing the browser tab.</td>
                                       </tr>
                                       <tr>
-                                        <td>2. Data get lost after manual deletion.</td>
+                                        <td>2. Data don't get lost before manual deletion.</td>
                                         <td>2. Data get lost without manual deletion.</td>
                                       </tr>
                                       <tr>
